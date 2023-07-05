@@ -1,3 +1,5 @@
+export {SwitchScreen} from './SwitchScreen';
+
 export {Animation102} from './Animation102';
 export {Animation101} from './Animation101';
 

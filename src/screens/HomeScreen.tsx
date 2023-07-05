@@ -1,22 +1,9 @@
-import {FlatList, Text, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import {styles} from '../theme/appTheme';
-import {FlatListMenuItem} from '../components';
+import {FlatListMenuItem, HeaderTitle} from '../components';
 import {MenuItem} from '../interfaces/IMenuItems';
+import {menuItems} from '../menuItems/menuItems';
 
-const menuItems: MenuItem[] = [
-  {
-    id: 1,
-    title: 'Animation101',
-    icon: 'cube-outline',
-    component: 'Animation101',
-  },
-  {
-    id: 2,
-    title: 'Animation102',
-    icon: 'albums-outline',
-    component: 'Animation102',
-  },
-];
 export const HomeScreen = () => {
   const renderMenuItem = ({title, icon, id, component}: MenuItem) => {
     return (
@@ -30,11 +17,7 @@ export const HomeScreen = () => {
   };
 
   const renderListHeader = () => {
-    return (
-      <View style={{marginVertical: 5}}>
-        <Text style={styles.title}>Opciones de menú</Text>
-      </View>
-    );
+    return <HeaderTitle title="Opciones de menú" />;
   };
 
   return (
