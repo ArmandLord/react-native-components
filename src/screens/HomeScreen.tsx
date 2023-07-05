@@ -6,27 +6,15 @@ import {MenuItem} from '../interfaces/IMenuItems';
 const menuItems: MenuItem[] = [
   {
     id: 1,
-    title: 'Animation 101',
+    title: 'Animation101',
     icon: 'cube-outline',
-    component: 'Animation101Screen',
+    component: 'Animation101',
   },
   {
     id: 2,
-    title: 'Animation 102',
+    title: 'Animation102',
     icon: 'albums-outline',
-    component: 'Animation101Screen',
-  },
-  {
-    id: 3,
-    title: 'a Item',
-    icon: 'cube-outline',
-    component: 'Animation101Screen',
-  },
-  {
-    id: 4,
-    title: 'b Item',
-    icon: 'cube-outline',
-    component: 'Animation101Screen',
+    component: 'Animation102',
   },
 ];
 export const HomeScreen = () => {
