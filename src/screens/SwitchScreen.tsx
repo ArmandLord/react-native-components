@@ -10,8 +10,6 @@ export const SwitchScreen = () => {
     isHappy: true,
   });
   const toggleSwitch = (v: boolean, currentState: string) => {
-    console.log(currentState);
-
     setIsEnabled({
       ...isEnabled,
       [currentState]: v,
