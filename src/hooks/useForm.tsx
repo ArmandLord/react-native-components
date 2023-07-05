@@ -3,7 +3,7 @@ import {useState} from 'react';
 export const useForm = <T extends Object>(initState: T) => {
   const [state, setState] = useState(initState);
 
-  const onChange = (value: string | boolean, field: keyof T) => {
+  const onChange = <K extends Object>(value: K, field: keyof T) => {
     setState({
       ...state,
       [field]: value,

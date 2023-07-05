@@ -1,3 +1,5 @@
+export {PullToRefresh} from './PullToRefresh';
+
 export {AlertsScreen} from './AlertsScreen';
 export {TextInputScreen} from './TextInputScreen';
 
