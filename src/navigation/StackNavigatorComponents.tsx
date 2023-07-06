@@ -12,6 +12,7 @@ import {
   PullToRefresh,
   SectionListScreen1,
   InfiniteScrollScreen,
+  SlideScreen,
 } from '../screens';
 
 export type StackNavigatorComponentsProps = {
@@ -26,6 +27,7 @@ export type StackNavigatorComponentsProps = {
   SectionListScreen1: undefined;
   ModalScreen: undefined;
   InfiniteScrollScreen: undefined;
+  SlideScreen: undefined;
 };
 
 const Stack = createStackNavigator<StackNavigatorComponentsProps>();
@@ -47,6 +49,7 @@ export const StackNavigatorComponents = () => {
         name="InfiniteScrollScreen"
         component={InfiniteScrollScreen}
       />
+      <Stack.Screen name="SlideScreen" component={SlideScreen} />
     </Stack.Navigator>
   );
 };
