@@ -11,6 +11,7 @@ import {
   TextInputScreen,
   PullToRefresh,
   SectionListScreen1,
+  InfiniteScrollScreen,
 } from '../screens';
 
 export type StackNavigatorComponentsProps = {
@@ -24,6 +25,7 @@ export type StackNavigatorComponentsProps = {
   PullToRefresh: undefined;
   SectionListScreen1: undefined;
   ModalScreen: undefined;
+  InfiniteScrollScreen: undefined;
 };
 
 const Stack = createStackNavigator<StackNavigatorComponentsProps>();
@@ -41,6 +43,10 @@ export const StackNavigatorComponents = () => {
       <Stack.Screen name="PullToRefresh" component={PullToRefresh} />
       <Stack.Screen name="SectionListScreen1" component={SectionListScreen1} />
       <Stack.Screen name="ModalScreen" component={ModalScreen} />
+      <Stack.Screen
+        name="InfiniteScrollScreen"
+        component={InfiniteScrollScreen}
+      />
     </Stack.Navigator>
   );
 };

@@ -1,5 +1,5 @@
+export {InfiniteScrollScreen} from './InfiniteScrollScreen';
 export {ModalScreen} from './ModalScreen';
-
 export {AlertsScreen} from './AlertsScreen';
 export {Animation101} from './Animation101';
 export {Animation102} from './Animation102';
