@@ -1,6 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Text, View} from 'react-native';
+import {ModalScreen} from '../screens/ModalScreen';
 import {
   AlertsScreen,
   Animation101,
@@ -22,6 +23,7 @@ export type StackNavigatorComponentsProps = {
   TextInputScreen: undefined;
   PullToRefresh: undefined;
   SectionListScreen1: undefined;
+  ModalScreen: undefined;
 };
 
 const Stack = createStackNavigator<StackNavigatorComponentsProps>();
@@ -38,6 +40,7 @@ export const StackNavigatorComponents = () => {
       <Stack.Screen name="TextInputScreen" component={TextInputScreen} />
       <Stack.Screen name="PullToRefresh" component={PullToRefresh} />
       <Stack.Screen name="SectionListScreen1" component={SectionListScreen1} />
+      <Stack.Screen name="ModalScreen" component={ModalScreen} />
     </Stack.Navigator>
   );
 };
