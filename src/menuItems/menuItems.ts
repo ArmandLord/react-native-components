@@ -61,4 +61,10 @@ export const menuItems: MenuItem[] = [
     icon: 'flower-outline',
     component: 'SlideScreen',
   },
+  {
+    id: 11,
+    title: 'ChangeTheme',
+    icon: 'flask-outline',
+    component: 'ChangeTheme',
+  },
 ];

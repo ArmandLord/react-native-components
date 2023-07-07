@@ -1,19 +1,18 @@
 import 'react-native-gesture-handler';
-import React from 'react';
 import {SafeAreaView} from 'react-native';
 import {StackNavigatorComponents} from './src/navigation/StackNavigatorComponents';
-import {NavigationContainer} from '@react-navigation/native';
+import {ThemeContextProvider} from './src/context/ThemeContextProvider';
 
 const App = () => {
   return (
-    <NavigationContainer>
+    <ThemeContextProvider>
       <SafeAreaView
         style={{
           flex: 1,
         }}>
         <StackNavigatorComponents />
       </SafeAreaView>
-    </NavigationContainer>
+    </ThemeContextProvider>
   );
 };
 

@@ -15,6 +15,7 @@ import {LogBox} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {StackNavigatorComponentsProps} from '../navigation/StackNavigatorComponents';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 LogBox.ignoreLogs(['ViewPropTypes will be removed']);
 
@@ -69,6 +70,7 @@ export const SlideScreen = () => {
           }}>
           <TouchableOpacity onPress={() => navigate('Home')} style={styles.btn}>
             <Text style={styles.btnText}>Next</Text>
+            <Icon name="chevron-forward-outline" size={20} color="white" />
           </TouchableOpacity>
         </View>
       </View>
@@ -127,7 +129,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#5856D6',
     width: 100,
     padding: 10,
-    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     borderRadius: 10,
   },
